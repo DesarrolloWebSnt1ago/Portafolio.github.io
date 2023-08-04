@@ -1,0 +1,544 @@
+body {
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+#portafolio {
+    width: auto;
+}
+
+header {
+    display: flex;
+    height: 500px;
+    border-bottom: solid 3px gray;
+    border-radius: 5px;
+}
+
+header .fondo {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;    
+    width: 100%;
+}
+
+header .fondo h1 {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-family: monofonto;
+    font-size: 50px;
+    animation: pulso 2s infinite 0s alternate;
+}
+
+@font-face {
+    font-family: monofonto;
+    src: url(/monofonto.otf);
+}
+
+@keyframes pulso {
+    from {
+        font-size: 50px;
+        background: -webkit-linear-gradient(180deg, rgb(200, 105, 200),yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 50%;
+    }
+    to {
+        font-size: 60px;
+        background: -webkit-linear-gradient(180deg, rgb(200, 105, 200),yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 100%;
+    }
+}
+
+header .fondo .formas {
+    animation: cuadrado 2s infinite 0s alternate;
+    border: solid 2px white;
+    position: absolute;
+
+
+}
+
+@keyframes cuadrado {
+    0% {
+        opacity: 0;
+        transform: rotate(40deg);
+        box-shadow: 10px 5px 10px 5px wheat;
+    }
+    50% {
+        opacity: .4;
+        transform: rotate(80deg);
+
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-80deg);
+
+    }
+}
+
+
+header .fondo .formas1 {
+    width: 10px;
+    height: 10px;
+    left: 10%;
+    top: 30%;
+   
+}
+header .fondo .formas2 {
+    width: 40px;
+    height: 40px;
+    right: 10%;
+    bottom: 50%;
+   
+}
+header .fondo .formas3{
+    width: 30px;
+    height: 30px;
+    top: 10%;
+    right: 30%;
+
+   
+}
+header .fondo .formas4 {
+    width: 10px;
+    height: 10px;
+bottom: 40%;   
+}
+header .fondo .formas5{
+    width: 30px;
+    height: 30px;
+    top: 60%;
+left: 20%;
+}
+header .fondo .formas6{
+    width: 15px;
+    height: 15px;
+right: 50%;
+
+}
+header .fondo .formas7 {
+    width: 23px;
+    height: 23px;
+top: 65%;   
+left: 70%;
+}
+header .fondo .formas8 {
+    width: 35px;
+    height: 35px;
+bottom: 80%;
+   
+}
+header .fondo .formas9 {
+    width: 45px;
+    height: 45px;
+    left: 20%;
+    top: 10%;
+
+}
+header .fondo .formas10 {
+    width: 55px;
+    height: 55px;
+right: 40%;
+   
+}
+
+header .fondo figure {
+    display: flex;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    color: black;
+    margin-top: 60px;
+    background-color: #f2f1f3;
+    z-index: 1;
+}
+
+
+
+header .fondo figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+header .fondo figure figcaption {
+    height: auto;
+    
+}
+
+
+main {
+    border-bottom: solid 3px gray;
+    border-top: solid 3px gray;
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+}
+
+h2 {
+    padding: 20px;
+    border-bottom: solid 3px rgb(200, 200, 200);
+    border-radius: 5px;
+    background: linear-gradient(360deg, yellow, red);
+    color: white;
+    position: relative;
+    display: inline;
+    font-family: monofonto;
+
+    
+}
+
+main .proyectos {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    height: 500px;
+    border-bottom: solid 5px gray;
+
+}
+
+main .proyectos .calculadora {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: 20px;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .proyectos .formulario {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: 20px;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+main .proyectos .documentacion {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: 20px;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+main .proyectos a {
+    text-decoration: none;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    margin: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    animation: enlace 2s infinite 0s alternate;
+    box-shadow: 0px 5px 20px 5px black;
+}
+
+@keyframes enlace {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateZ(10px);
+    }
+}
+
+@media (max-width: 750px) {
+    main .proyectos .calculadora {
+        min-width: 200px;
+        
+    }
+    main .proyectos .formulario {
+        min-width: 200px;
+    }
+    main .proyectos .documentacion {
+        min-width: 200px;
+    }
+}
+
+
+
+main .proyectos img {
+    width: 150px;
+    height: 170px;
+}
+
+main .tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+main .tecnologias .bolas10 {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    border-radius: 50%;
+    animation: bolas 4s linear 1s infinite;
+
+}
+
+main .tecnologias .bolas10 .bolas {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    left: 35px;
+    right: 50%;
+    bottom: 50%;
+
+}
+
+@keyframes bolas {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+main .tecnologias .bolas10 .bolas1 {
+    position: relative;
+    top: 160px;
+    left: 55px;
+
+}
+
+main .tecnologias .bolas10 .bolas2 {
+    position: relative;
+    left: -6px;
+    top: 90px;
+}
+
+main .tecnologias .bolas10 .bolas3 {
+    position: relative;
+    left: 5px;
+}
+
+main .tecnologias .bolas10 .bolas4 {
+    position: relative;
+    top: 20px;
+left: 55px;
+}
+
+main .tecnologias .bolas10 .bolas5 {
+    position: relative;
+    top: 160px;
+    left: 30px;
+
+}
+
+main .tecnologias .bolas10 .bolas6 {
+    position: relative;
+    top: 90px;
+}
+
+
+main .tecnologias .bolas9 {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    border-radius: 50%;
+    animation: bolas 4s linear 1s infinite;
+
+}
+
+main .tecnologias .bolas9 .bolas {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    left: 35px;
+    right: 50%;
+    bottom: 50%;
+
+}
+
+main .tecnologias .bolas9 .bolas11 {
+    position: relative;
+    top: 160px;
+    left: 55px;
+
+}
+
+main .tecnologias .bolas9 .bolas12 {
+    position: relative;
+    left: -6px;
+    top: 90px;
+}
+
+main .tecnologias .bolas9 .bolas13 {
+    position: relative;
+    left: 5px;
+}
+
+main .tecnologias .bolas9 .bolas14 {
+    position: relative;
+    top: 20px;
+left: 55px;
+}
+
+main .tecnologias .bolas9 .bolas15 {
+    position: relative;
+    top: 160px;
+    left: 30px;
+
+}
+
+main .tecnologias .bolas9 .bolas16 {
+    position: relative;
+    top: 90px;
+}
+
+
+
+main .tecnologias a {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    right: 160px;
+
+    
+}
+
+main .tecnologias a .fa-brands::before {
+    font-size: 70px;
+    
+}
+
+main .tecnologias a .fa-brands {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer {
+    background-color: black;
+    border-top: solid 3px gray;
+    border-radius: 5px;
+    width: auto;
+    height: 70%;
+}
+
+footer .contacto {
+    height: auto;
+    width: auto;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+footer .contacto h3 {
+    padding: 10px;
+    width: 100px;
+    height: auto;
+    color: aliceblue;
+    display: flex;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+
+}
+
+footer .contacto .ubicacion {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    
+}
+
+footer .contacto .mapa {
+    width: auto;
+    height: auto;
+    position: relative;
+    border: 20px solid rgb(200, 200, 200);
+    border-radius: 3rem;
+}
+
+footer .contacto .redes-sociales {
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+    width: auto;
+}
+
+footer .contacto .redes-sociales a {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+   
+
+}
+
+footer .contacto .redes-sociales a img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .contacto .redes-sociales .imagenes {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+footer .contacto .correo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+footer .contacto .correo a {
+    text-decoration: none;
+    color: aliceblue;
+}
